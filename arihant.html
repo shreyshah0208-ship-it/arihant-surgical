@@ -105,7 +105,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://images.unsplash.com/photo-1584036561566-b4523411232f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: url('bg.jpg');
+            filter: grayscale(100%);
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -162,6 +163,10 @@
             justify-content: center;
             border-radius: 8px;
             color: #666;
+            background: url('unnamed.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
         }
 
         /* Products Grid */
@@ -258,7 +263,7 @@
     <!-- Header -->
     <header>
         <div class="container navbar">
-            <div class="logo">Arihant <span>Surgical</span></div>
+            <a href='/arihant.html'></a><div class="logo">Arihant <span>Surgical</span></div></a>
             <nav class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -271,10 +276,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <h1>Quality Medical Supplies in Vadodara</h1>
-            <p>Your trusted partner for surgical instruments, hospital furniture, and medical disposables. Serving the community with excellence.</p>
-            <a href="#contact" class="cta-btn" style="background: white; color: var(--primary-color);">Visit Our Shop</a>
+        <div style="width: 100%; height: 100%; align-content: center; background: rgba(0, 0, 0, 0.5);">
+            <div class="container" style="height: 100%; align-content: center;">
+                <h1>Quality Medical Supplies in Vadodara</h1>
+                <p>Your trusted partner for surgical instruments, hospital furniture, and medical disposables. Serving the community with excellence.</p>
+                <a href="#contact" class="cta-btn" style="background: white; color: var(--primary-color);">Visit Our Shop</a>
+            </div>
         </div>
     </section>
 
@@ -296,7 +303,7 @@
                 </div>
                 <div class="about-image">
                     <!-- Placeholder for Shop Image -->
-                    <i class="fas fa-hospital fa-5x"></i>
+                    <!-- <i class="fas fa-hospital fa-5x"></i> -->
                 </div>
             </div>
         </div>
@@ -371,14 +378,15 @@
                 <!-- Google Maps Embed Placeholder -->
                 <div class="contact-map">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.666!2d73.18!3d22.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzM2LjAiTiA3M8KwMTAnNDguMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
-                        width="100%" 
-                        height="300" 
-                        frameborder="0" 
-                        style="border:0; border-radius: 8px;" 
-                        allowfullscreen="" 
-                        aria-hidden="false" 
-                        tabindex="0">
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5202088.315386237!2d73.190918!3d22.3094258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf5779b7d45b%3A0x7ca066b10555d7ba!2sArihant%20Surgical%20Co.%20OMRON%2FMIDMARK%20AUTHORISED%20SALES%26SERVICE%2FSURGICAL%20EQUIPMENT%20SUPPLIER%2F!5e1!3m2!1sen!2sin!4v1774723088423!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    >
+
                     </iframe>
                     <p style="font-size: 0.8rem; margin-top: 10px; text-align: center;">*Map location is approximate based on address.</p>
                 </div>
